@@ -1,8 +1,8 @@
 function SearchBar({ search, setSearch }) {
   return (
     <input
-      className="search-bar"
       type="text"
+      className="search-bar"
       placeholder="Search expenses..."
       value={search}
       onChange={(e) => setSearch(e.target.value)}

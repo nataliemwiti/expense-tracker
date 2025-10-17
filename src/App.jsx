@@ -102,28 +102,28 @@ function App() {
   );
 
  return (
+   <div>
+    <header className="top-header">
+      <h1>Expense Tracker</h1>
+      <p>
+        Keep track of your financial records. Record, categorize, and manage
+        your spending easily.
+      </p>
+    </header>
+
     <div className="app-container">
-  
       <div className="sidebar">
         <h2>Add Expense</h2>
         <ExpenseForm addExpense={addExpense} />
       </div>
 
-      
       <div className="main">
-        <header className="header">
-          <h1>Expense Tracker</h1>
-          <p>
-            Keep track of your financial records. Record, categorize, and manage
-            your spending easily.
-          </p>
-        </header>
-
         <SearchBar search={search} setSearch={setSearch} />
         <ExpenseTable expenses={filteredExpenses} />
       </div>
     </div>
-  );
+  </div>
+);
 }
 
 export default App;

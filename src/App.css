@@ -6,10 +6,15 @@
 }
 
 .sidebar {
-  width: 300px;
+  width: 280px;
   background: #f3f3f3;
   padding: 20px;
   border-right: 2px solid #ddd;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .expense-form {
@@ -22,6 +27,8 @@
 .expense-form button {
   padding: 10px;
   font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .expense-form button {
@@ -31,16 +38,41 @@
   cursor: pointer;
 }
 
-.main {
-  flex: 1;
-  padding: 20px;
+.expense-form button:hover {
+  background: #333;
 }
 
+.main {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+/* === Header section at top-left === */
+.top-header {
+  padding: 30px 40px 10px 40px;
+}
+
+.top-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.top-header p {
+  color: #6c757d;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* === Search bar and table === */
 .search-bar {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .expense-table {
@@ -58,4 +90,12 @@
 .expense-table td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+}
+
+.expense-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.expense-table tr:hover {
+  background-color: #e8e8e8;
 }
